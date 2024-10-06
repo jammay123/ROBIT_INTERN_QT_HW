@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(102, 102, 102);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="link1_label">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>15</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>link1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="link2_label">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>40</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>link2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="link3_label">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>65</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>link3</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="link1_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>10</y>
+      <width>200</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="link2_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>35</y>
+      <width>200</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="link3_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>60</y>
+      <width>200</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="makeArm_btn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>95</y>
+      <width>240</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate Arm</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="joint1_slider">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>140</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>360</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="joint2_slider">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>180</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>360</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="joint3_slider">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>220</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>360</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="joint1_label">
+    <property name="geometry">
+     <rect>
+      <x>545</x>
+      <y>140</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>joint1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="joint2_label">
+    <property name="geometry">
+     <rect>
+      <x>545</x>
+      <y>180</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>joint2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="joint3_label">
+    <property name="geometry">
+     <rect>
+      <x>545</x>
+      <y>220</y>
+      <width>40</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>joint3</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="joint1_LCD">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>140</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="joint2_LCD">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>180</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="joint3_LCD">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>220</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset_btn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>260</y>
+      <width>240</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="visual_area">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>link2_spinBox</zorder>
+   <zorder>link1_label</zorder>
+   <zorder>link2_label</zorder>
+   <zorder>link3_label</zorder>
+   <zorder>link1_spinBox</zorder>
+   <zorder>link3_spinBox</zorder>
+   <zorder>makeArm_btn</zorder>
+   <zorder>joint1_slider</zorder>
+   <zorder>joint2_slider</zorder>
+   <zorder>joint3_slider</zorder>
+   <zorder>joint1_label</zorder>
+   <zorder>joint2_label</zorder>
+   <zorder>joint3_label</zorder>
+   <zorder>joint1_LCD</zorder>
+   <zorder>joint2_LCD</zorder>
+   <zorder>joint3_LCD</zorder>
+   <zorder>reset_btn</zorder>
+   <zorder>visual_area</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
